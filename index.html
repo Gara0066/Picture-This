@@ -15,13 +15,36 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img 
-    srcset="
+    
+    <picture>
+
+      <!--LANDSCAPE-->
+      
+      <source srcset="
+          images/landscape-picture/museum-1600_x_960.jpg,
+          images/landscape-picture/museum-3200_x_1920.jpg 2x,
+          images/landscape-picture/museum-4800_x_2880.jpg 3x"
+          media="( max-width: 958px)">
+      <source srcset="
+          images/landscape-picture/museum-1700_x_720.jpg,
+          images/landscape-picture/museum-2400_x_1440.jpg 2x,
+          images/landscape-picture/museum-3600_x_2160.jpg 3x"
+          media="( max-width: 720px)">
+
+        <source srcset="
+        images/landscape-picture/museum-800_x_480.jpg,
+        images/landscape-picture/museum-1600_x_960.jpg 2x,
+        images/landscape-picture/museum-2400_x_1440.jpg 3x"
+        media="( max-width: 480px)">
+
+        <source srcset="
         images/landscape-picture/museum-530_x_320.jpg,
         images/landscape-picture/museum-1065_x_640.jpg 2x,
-        images/landscape-picture/museum-1600_x_960.jpg 3x" 
-        src="images/museum.jpg" alt="museum room">
-    <picture>
+        images/landscape-picture/museum-1600_x_960.jpg 3x"
+        media="( max-width: 320px)">
+
+      <!--SQAURE-->   
+      
       <source srcset="
         images/square-picture/museum-800_x_800.jpg,
         images/square-picture/museum-1600_x_1600.jpg 2x,
@@ -39,7 +62,7 @@
         images/square-picture/museum-960_x_960.jpg 2x,
         images/square-picture/museum-1440_x_1440.jpg 3x"
         media="( min-width: 960px)">
-        <img src="images/museum.jpg" alt="museum room">
+      <img src="images/museum.jpg" alt="museum room">
     </picture>
   </header>
 </body>
